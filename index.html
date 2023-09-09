@@ -35,9 +35,22 @@
           <li><a href="#">Community</a></li>
         </ul>
 
-        <button class="menu">
-          <img src="./imagenes/icon-hamburger.svg" alt="Menu" />
-        </button>
+        <div class="menu">
+          <button class="menu-button">
+            <img
+              src="./imagenes/icon-hamburger.svg"
+              alt="Menu"
+              class="menu-icon"
+            />
+          </button>
+          <div class="menu-options">
+            <a href="#">Sports</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Trainning</a>
+            <a href="#">Community</a>
+          </div>
+        </div>
         <button class="boton-morado boton-nav">Contact</button>
       </nav>
     </header>
@@ -67,6 +80,7 @@
         <article>
           <div class="ventaja-encabezado">
             <p>01</p>
+            <!-- para usar pseudo clases  -->
             <p>Track company-wide progress</p>
           </div>
           <p class="ventaja-descripcion">
@@ -147,8 +161,12 @@
         <button class="boton-morado" onClick="showMore">More</button>
       </section>
       <section class="mejores-equipos">
-        <h2>Get to know the best teams of the year</h2>
-        <button class="boton-morado boton-oscuro">Go for it</button>
+        <div>
+          <h2>Get to know the best teams of the year</h2>
+        </div>
+        <div>
+          <button class="boton-morado boton-oscuro">Go for it</button>
+        </div>
       </section>
     </main>
     <footer>

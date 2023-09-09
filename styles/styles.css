@@ -33,15 +33,66 @@ nav li a:hover {
   opacity: 0.6;
 }
 
-.menu {
+/* .menu {
   border: none;
   background-color: #ffffff;
   width: 16.3%;
   cursor: pointer;
-}
+} */
 
 .menu img {
   min-height: 60px;
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculta el botón por defecto */
+}
+
+.menu-options {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  z-index: 1;
+  animation: fadeMenu 0.9s ease-in-out; /* Agrega la animación de desvanecimiento */
+}
+
+.menu-options a {
+  float: none;
+  color: black;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menu-options a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el menú al hacer clic en el botón */
+.menu-button:focus + .menu-options {
+  display: block;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logo {
@@ -131,6 +182,8 @@ nav li a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 114.6%; /* 41.256px */
+  align-self: stretch;
+  width: 70%;
 }
 
 .diferencias-pros p {
@@ -138,6 +191,9 @@ nav li a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 151.1%; /* 24.176px */
+  align-self: stretch;
+  width: 85%;
+  text-align: left;
 }
 
 .ventajas {
@@ -384,6 +440,7 @@ footer nav ul {
   height: 22.054px;
   justify-content: space-between;
   align-items: flex-start;
+  align-self: stretch;
 }
 
 .logo-footer {
@@ -476,17 +533,18 @@ footer p {
   }
 
   .descripcion-titular {
-  padding-left: 16%;
+    padding-left: 16%;
   }
 
   .diferencias-pros {
     padding: 2.78% 15.28%;
     flex-direction: row;
     margin-top: 95.93px;
-    background-color: #8B48BF;
+    background-color: #8b48bf;
   }
 
-  .diferencias-pros h2, .diferencias-pros p {
+  .diferencias-pros h2,
+  .diferencias-pros p {
     width: 50%;
   }
 
@@ -495,7 +553,7 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     height: 428px;
     padding: 4rem 0;
     gap: 2.4rem;
@@ -511,7 +569,7 @@ footer p {
     height: 162px;
     gap: 1.8rem;
   }
-  
+
   .ventaja-descripcion {
     padding: 0 0 0 16%;
   }
@@ -520,7 +578,7 @@ footer p {
     margin-top: 9.7rem;
   }
 
-  .mejores-del-mes>div {
+  .mejores-del-mes > div {
     display: flex;
     justify-content: center;
   }
@@ -537,5 +595,57 @@ footer p {
 
   .mejores-equipos {
     margin-top: 180px;
+  }
+}
+
+/* Mostrar el botón en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (min-width: 670px) {
+  .mejores-equipos {
+    background: #8b48bf;
+    gap: 40rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6rem 21rem;
+    justify-content: center;
+  }
+
+  .mejores-equipos h2 {
+    text-align: start;
+  }
+
+  .boton-oscuro {
+    background: #ffffff;
+    color: #8b48bf;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    align-content: center;
+    padding: 5rem 17rem;
+  }
+
+  footer p {
+    justify-content: flex-end;
+    padding-right: 5rem;
+    margin-top: 14rem;
+    position: absolute;
+  }
+
+  .redes-sociales {
+    position: absolute;
+    padding: 1rem 85rem;
+    margin-top: 10rem;
+  }
+  .redes-sociales ul {
+    gap: 1.3rem;
   }
 }
