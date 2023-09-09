@@ -51,7 +51,7 @@ header nav {
 .menu-options a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -467,7 +467,7 @@ footer p {
     }
 
     .boton-oscuro {
-      background: #FFF;
+      background: #ffffff;
       color: #8B48BF;
     }
 
@@ -493,7 +493,7 @@ footer p {
       margin-top: 10rem;
     }
     .redes-sociales ul {
-      gap: 13px;
+      gap: 1.3rem;
     }
 
 }
