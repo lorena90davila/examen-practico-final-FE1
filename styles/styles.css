@@ -22,13 +22,6 @@ header nav {
   justify-content: space-between;
 }
 
-/* .menu {
-  border: none;
-  background-color: #ffffff;
-  width: 16.3%;
-  cursor: pointer;
-} */
-
 .menu img {
   height: 60px;
 }
@@ -52,6 +45,7 @@ header nav {
   background-color: #f9f9f9;
   min-width: 80px;
   z-index: 1;
+  animation: fadeMenu 0.9s ease-in-out; /* Agrega la animación de desvanecimiento */
 }
 
 .menu-options a {
@@ -70,6 +64,18 @@ header nav {
 /* Mostrar el menú al hacer clic en el botón */
 .menu-button:focus + .menu-options {
   display: block;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeMenu {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .logo {
