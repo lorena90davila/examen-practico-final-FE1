@@ -420,11 +420,7 @@ footer p {
 
     footer{
       display: flex;
-      /* position: absolute; */
-      /* flex-wrap: wrap; */
       flex-direction: row-reverse;
-      /* align-items: stretch;
-      justify-content: space-around; */
       align-items: flex-start;
       align-content: center;
       padding: 5rem 17rem;
@@ -432,7 +428,6 @@ footer p {
     }
 
     footer p {
-      /* width: 100%; */
       justify-content: flex-end;
       padding-right: 5rem;
       margin-top: 14rem;
@@ -446,10 +441,6 @@ footer p {
     }
     .redes-sociales ul {
       gap: 13px;
-    }
-    .logo-footer img{
-      /* display: flex; */
-      /* margin-left: 21rem; */
     }
 
 }
