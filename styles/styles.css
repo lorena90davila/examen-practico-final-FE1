@@ -373,6 +373,7 @@ footer nav ul {
   height: 22.054px;
   justify-content: space-between;
   align-items: flex-start;
+  align-self: stretch;
 }
 
 .logo-footer {
@@ -395,4 +396,60 @@ footer p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media(min-width: 670px){
+  .mejores-equipos{
+    background: #8B48BF;
+    gap: 40rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6rem 21rem;
+    justify-content: center;
+    }
+
+    .mejores-equipos h2 {
+      text-align: start;
+    }
+
+    .boton-oscuro {
+      background: #FFF;
+      color: #8B48BF;
+    }
+
+    footer{
+      display: flex;
+      /* position: absolute; */
+      /* flex-wrap: wrap; */
+      flex-direction: row-reverse;
+      /* align-items: stretch;
+      justify-content: space-around; */
+      align-items: flex-start;
+      align-content: center;
+      padding: 5rem 17rem;
+
+    }
+
+    footer p {
+      /* width: 100%; */
+      justify-content: flex-end;
+      padding-right: 5rem;
+      margin-top: 14rem;
+      position: absolute;
+    }
+
+    .redes-sociales {
+      position: absolute;
+      padding: 1rem 85rem;
+      margin-top: 10rem;
+    }
+    .redes-sociales ul {
+      gap: 13px;
+    }
+    .logo-footer img{
+      /* display: flex; */
+      /* margin-left: 21rem; */
+    }
+
 }
