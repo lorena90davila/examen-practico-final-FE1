@@ -11,31 +11,44 @@
       media="screen"
       href="styles/styles.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js"></script>
+    <script>
+      function showMore() {
+        document.querySelector('#oculto').style.display = 'block';
+      }
+    </script>
   </head>
   <body>
     <header>
       <nav>
-        <img class="logo" src="./imagenes/logo.svg" alt="Sportit logo" />
+        <a class="logo" href="">
+          <img src="./imagenes/logo.svg" alt="Sportit logo" />
+        </a>
+        <ul type="none" class="">
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Trainning</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+
         <button class="menu">
           <img src="./imagenes/icon-hamburger.svg" alt="Menu" />
         </button>
+        <button class="boton-morado boton-nav">Contact</button>
       </nav>
     </header>
     <main>
       <div class="contenedor-intro">
         <img src="./imagenes/padel-intro.png" alt="Jugador de Padel" />
-        <section class="seccion-header">
-          <h1 class="frase-encabezado">
+        <section class="seccion-titular">
+          <h1 class="frase-titular">
             LIVE: Follow the Telcel Huawei Mexico Open 2022 for free
           </h1>
-          <p class="descripcion-encabezado">
+          <p class="descripcion-titular">
             The final Open of the 2022 World Padel Tour season is underway,
             don't miss out on any of the action!
           </p>
@@ -63,7 +76,7 @@
           </p>
         </article>
 
-        <article>
+        <article id="oculto">
           <div class="ventaja-encabezado">
             <p>02</p>
             <p>Advance built-in reports</p>
@@ -75,7 +88,7 @@
           </p>
         </article>
 
-        <article>
+        <article id="oculto">
           <div class="ventaja-encabezado">
             <p>03</p>
             <p>Everything you need in one place</p>
@@ -90,43 +103,48 @@
       <section class="mejores-del-mes">
         <h2>Best of the month</h2>
 
-        <article class="visible">
-          <div class="contenido-articulo">
-            <img src="./imagenes/avatar-sanyo.png" alt="Lebron Avatar" />
-            <h3>Sanyo</h3>
-            <p>
-              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-          </div>
-        </article>
+        <div class="contenedor-articulos">
+          <article class="visible">
+            <div class="contenido-articulo">
+              <img src="./imagenes/avatar-sanyo.png" alt="Lebron Avatar" />
+              <h3>Sanyo</h3>
+              <p>
+                Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+                mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+          </article>
 
-        <article>
-          <div class="contenido-articulo">
-            <img src="./imagenes/avatar.lebron.png" alt="Lebron Avatar" />
-            <h3>Lebron</h3>
-            <p>
-              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-          </div>
-        </article>
+          <article>
+            <div class="contenido-articulo">
+              <img src="./imagenes/avatar.lebron.png" alt="Lebron Avatar" />
+              <h3>Lebron</h3>
+              <p>
+                Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+                mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+          </article>
 
-        <article>
-          <div class="contenido-articulo">
-            <img src="./imagenes/avatar-navarro.png" alt="Lebron Avatar" />
-            <h3>Navarro</h3>
-            <p>
-              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            </p>
-          </div>
-        </article>
+          <article>
+            <div class="contenido-articulo">
+              <img src="./imagenes/avatar-navarro.png" alt="Lebron Avatar" />
+              <h3>Navarro</h3>
+              <p>
+                Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+                mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+          </article>
+        </div>
 
-        <button class="boton-morado">More</button>
+        <button class="boton-morado" onClick="showMore">More</button>
       </section>
       <section class="mejores-equipos">
         <h2>Get to know the best teams of the year</h2>
