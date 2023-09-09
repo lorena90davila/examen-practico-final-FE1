@@ -22,15 +22,54 @@ header nav {
   justify-content: space-between;
 }
 
-.menu {
+/* .menu {
   border: none;
   background-color: #ffffff;
   width: 16.3%;
   cursor: pointer;
-}
+} */
 
 .menu img {
   height: 60px;
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculta el botón por defecto */
+}
+
+
+.menu-options {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80px;
+  z-index: 1;
+}
+
+.menu-options a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.menu-options a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mostrar el menú al hacer clic en el botón */
+.menu-button:focus + .menu-options {
+  display: block;
 }
 
 .logo {
@@ -398,7 +437,15 @@ footer p {
   line-height: normal;
 }
 
+/* Mostrar el botón en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-button {
+      display: block;
+  }
+}
+
 @media(min-width: 670px){
+  
   .mejores-equipos{
     background: #8B48BF;
     gap: 40rem;
