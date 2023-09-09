@@ -39,3 +39,14 @@ No dude en utilizar cualquier flujo de trabajo con el que se sienta cómodo. A c
 ## Envío de su solución
 
 Envíe su solución en el google forms adjunto en PG, por favor adjuntar un archivo ZIP.
+
+## Participantes y aportes
+
+Lorena Dávila y Melanie Padilla
+
+Realizamos la versión mobile juntas
+
+1. Desktop media queries desde navbar hasta sección Best of the Month -Lorena
+2. Desktop media queries de dos últimas secciones -Melanie
+3. Mostrar opciones del menu y añadir animación - Melanie
+4. Cambiar medidas fijas a relativas con rem y % y añadir algunos efectos hover - Lorena
