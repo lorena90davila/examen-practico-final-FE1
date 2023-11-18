@@ -17,17 +17,17 @@
     />
     <script>
       function showMore() {
-        document.querySelector('#oculto').style.display = 'block';
+        document.querySelector('#hidden').style.display = 'block';
       }
     </script>
   </head>
   <body>
     <header>
       <nav>
-        <a class="logo" href="">
+        <a class="nav__logo-link" href="">
           <img src="./imagenes/logo.svg" alt="Sportit logo" />
         </a>
-        <ul type="none" class="">
+        <ul type="none">
           <li><a href="#">Sports</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">About Us</a></li>
@@ -35,40 +35,36 @@
           <li><a href="#">Community</a></li>
         </ul>
 
-        <div class="menu">
-          <button class="menu-button">
-            <img
-              src="./imagenes/icon-hamburger.svg"
-              alt="Menu"
-              class="menu-icon"
-            />
+        <div class="nav__mobile-menu">
+          <button class="mobile-menu__button">
+            <img src="./imagenes/icon-hamburger.svg" alt="Menu" />
           </button>
-          <div class="menu-options">
+          <ul type="none" class="mobile-menu__options">
             <a href="#">Sports</a>
             <a href="#">Products</a>
             <a href="#">About Us</a>
             <a href="#">Trainning</a>
             <a href="#">Community</a>
-          </div>
+          </ul>
         </div>
-        <button class="boton-morado boton-nav">Contact</button>
+        <button class="default-button">Contact</button>
       </nav>
     </header>
     <main>
-      <div class="contenedor-intro">
+      <div class="main-header__container">
         <img src="./imagenes/padel-intro.png" alt="Jugador de Padel" />
-        <section class="seccion-titular">
-          <h1 class="frase-titular">
+        <section class="main-header__section">
+          <h1 class="main-header-section__title">
             LIVE: Follow the Telcel Huawei Mexico Open 2022 for free
           </h1>
-          <p class="descripcion-titular">
+          <p class="main-header-section__description">
             The final Open of the 2022 World Padel Tour season is underway,
             don't miss out on any of the action!
           </p>
-          <button class="boton-morado">Contact</button>
+          <button class="default-button">Contact</button>
         </section>
       </div>
-      <section class="diferencias-pros">
+      <section class="main__differences-section">
         <h2>What´s different between pros?</h2>
         <p>
           Manage provides all the functionality your teas needs, without the
@@ -76,50 +72,49 @@
           teams
         </p>
       </section>
-      <section class="ventajas">
+      <section class="main__advantages-section">
         <article>
-          <div class="ventaja-encabezado">
+          <div class="advantages-section__title">
             <p>01</p>
-            <!-- para usar pseudo clases  -->
             <p>Track company-wide progress</p>
           </div>
-          <p class="ventaja-descripcion">
+          <p class="advantages-section__description">
             Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
             Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
             nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
           </p>
         </article>
 
-        <article id="oculto">
-          <div class="ventaja-encabezado">
+        <article id="hidden">
+          <div class="advantages-section__title">
             <p>02</p>
             <p>Advance built-in reports</p>
           </div>
-          <p class="ventaja-descripcion">
+          <p class="advantages-section__description">
             Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
             Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
             nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
           </p>
         </article>
 
-        <article id="oculto">
-          <div class="ventaja-encabezado">
+        <article id="hidden">
+          <div class="advantages-section__title">
             <p>03</p>
             <p>Everything you need in one place</p>
           </div>
-          <p class="ventaja-descripcion">
+          <p class="advantages-section__description">
             Donec elit est, mattis lacinia arcu eu, efficitur consequat augue.
             Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel
             nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.
           </p>
         </article>
       </section>
-      <section class="mejores-del-mes">
+      <section class="main__best-section">
         <h2>Best of the month</h2>
 
-        <div class="contenedor-articulos">
+        <div>
           <article class="visible">
-            <div class="contenido-articulo">
+            <div class="best-section__article-container">
               <img src="./imagenes/avatar-sanyo.png" alt="Lebron Avatar" />
               <h3>Sanyo</h3>
               <p>
@@ -132,7 +127,7 @@
           </article>
 
           <article>
-            <div class="contenido-articulo">
+            <div class="best-section__article-container">
               <img src="./imagenes/avatar.lebron.png" alt="Lebron Avatar" />
               <h3>Lebron</h3>
               <p>
@@ -145,7 +140,7 @@
           </article>
 
           <article>
-            <div class="contenido-articulo">
+            <div class="best-section__article-container">
               <img src="./imagenes/avatar-navarro.png" alt="Lebron Avatar" />
               <h3>Navarro</h3>
               <p>
@@ -158,44 +153,46 @@
           </article>
         </div>
 
-        <button class="boton-morado" onClick="showMore">More</button>
+        <button class="default-button" onClick="showMore">More</button>
       </section>
-      <section class="mejores-equipos">
+      <section class="main__best-teams">
         <div>
           <h2>Get to know the best teams of the year</h2>
         </div>
         <div>
-          <button class="boton-morado boton-oscuro">Go for it</button>
+          <button class="default-button default-button_dark">Go for it</button>
         </div>
       </section>
     </main>
     <footer>
       <form action="" method="POST">
-        <div class="estructura-formulario">
+        <div class="footer__form">
           <input
             type="email"
             name="email"
             placeholder="Update in your inbox..."
           />
-          <button class="boton-morado boton-redondo" type="submit">Go</button>
+          <button class="default-button default-button_round" type="submit">
+            Go
+          </button>
         </div>
       </form>
       <nav>
         <ul type="none">
-          <div class="columna-navegacion">
+          <div class="footer-nav__column">
             <li><a href="#">Home</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About Us</a></li>
           </div>
-          <div class="columna-navegacion">
+          <div class="footer-nav__column">
             <li><a href="#">Trainning</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </div>
         </ul>
       </nav>
-      <div class="redes-sociales">
+      <div class="footer__social-links">
         <ul type="none">
           <li><img src="./imagenes/icon-facebook.svg" alt="" /></li>
           <li><img src="./imagenes/icon-youtube.svg" alt="" /></li>
@@ -204,7 +201,7 @@
           <li><img src="./imagenes/icon-instagram.svg" alt="" /></li>
         </ul>
       </div>
-      <div class="logo-footer">
+      <div class="footer__logo">
         <img src="./imagenes/logo-footer.svg" alt="Sportit Logo" />
       </div>
       <p>Copyright 2020. All Rights Reserved</p>
